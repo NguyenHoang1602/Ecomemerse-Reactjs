@@ -9,6 +9,15 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@components': path.resolve(__dirname, 'src/components'),
+      '@style': path.resolve(__dirname, 'src/assets/style'),
+      '@icons': path.resolve(__dirname, 'src/assets/icons'),
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ["legacy-js-api"],
+      }
     }
   }
 })
