@@ -1,14 +1,11 @@
-import MainLayout from '@components/Layout/Layout';
-import MyHeader from '@components/Header/Header';
-import MyFooter from '@components/Footer/Footer';
-import Mybutton from '@components/Button/Button';
+import HomePage from '@components/HomePage/HomePage';
 
 function App() {
-    return <>
-        <MainLayout>
-            <MyHeader />
-        </MainLayout>
-    </>;
+    return (
+        <>
+            <HomePage />
+        </>
+    );
 }
 
 export default App;
