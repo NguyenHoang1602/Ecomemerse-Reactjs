@@ -1,5 +1,17 @@
-@use '@style/_mixin.module.scss' as *;
+@use '@style/mixin.module.scss' as *;
+@use '@style/global.module.scss' as *;
+@use '@style/variable.module.scss' as *;
 
 .btn {
-    @include btn(100px, 40px, #f00, 5px);
+    @include btn(176px, 42px, $primary_color, 3px);
+    color: $white_color;
+    font-size: 14px;
+    font-weight: var(--weight-400);
+    border: 1px solid $primary_color;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: $white_color;
+    color: $primary_color;
+    transition: background-color 0.3s, color 0.3s;
 }

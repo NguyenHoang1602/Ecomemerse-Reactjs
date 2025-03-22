@@ -1,12 +1,44 @@
+@use '@style/mixin.module.scss' as *;
+@use '@style/global.module.scss' as *;
+@use '@style/variable.module.scss' as *;
+
 .container {
+    @include flex_box_custom(center, center, 0px);
     background-image: url(../../assets/images/02-SLIDESHOW-1.jpeg);
     min-height: 750px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #E9E6E3;
+    background-color: #e9e6e3;
+}
+
+.containerContent {
+    width: 100%;
+    height: 208.6px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .content {
-    
+    @include flex_box_custom(center, center, 10px);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
 }
+
+.contentH1 {
+    font-weight: var(--weight-400);
+    font-size: 42px;
+    text-align: center;
+    color: $four-color;
+    margin: 15px 0;
+}
+
+.contentDescription {
+    font-weight: var(--weight-400);
+    font-size: 16px;
+    color: $thr-color;
+    margin-bottom: 25px;
+}
+
+
