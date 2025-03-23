@@ -1,0 +1,39 @@
+@use '@style/mixin.module.scss' as *;
+@use '@style/variable.module.scss' as *;
+@use '@style/global.module.scss' as *;
+
+.container {
+    @include flex_box_custom(space-between, center, 0px);
+    width: 98%;
+    height: 144px;
+    background-color: $primary-color;
+    margin-top: -75px;
+    position: relative;
+    padding: 20px 55px 20px 55px;
+    box-sizing: border-box;
+}
+
+.containerInfoCard {
+    @include flex_box_custom(center, center, 20px);
+    width: 280px;
+    height: 104.8px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.contentCard {
+    
+}
+
+span {
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFFC7;
+    margin-bottom: 0px;
+}
